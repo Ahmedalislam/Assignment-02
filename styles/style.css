@@ -9,7 +9,7 @@ header{
     max-width: 1440px;
 background-color: black;
 }
-main > section{
+.container{
     max-width: 72%;
     margin: 0 auto;
 }
@@ -81,7 +81,7 @@ display: flex;
     
     background-color: #E6533C;
     border-radius: 46px;
-    padding: 16px 40px; 
+    padding: 20px 50px; 
     border: none;
 }
 .transparent{
@@ -144,6 +144,7 @@ div > img{
     width: 366px;
     margin-left: 70px;
     border-radius: 18px;
+    margin-top: 15px;
 
 }
 .run-content{
@@ -155,13 +156,71 @@ div > img{
 }
 
 
+/* Bmi related css */
+.bmi-container{
+    background-color: rgba(34, 34, 34, 1);
+    width: 1440px;
+    height: 487px;
+    display: flex;
+    
+}
+table{
+    border-collapse: collapse;
+    
+}
+td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+.bmi-chart{
+    padding: 20px 100px;
 
-
-
-
-
-
-
+}
+th{
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+color: white;
+padding: 20PX;
+}
+/* BMI Calculator related css */
+.bmi-calculator{
+    padding:20px 100px ;
+    gap: 15px;
+}
+input[type="text"]{
+    padding: 10px 40px 12px 20px ;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+input[type="number"]{
+    padding: 10px 40px 12px 20px ;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+}
+.gender{
+    padding: 10px 40px 12px 20px ;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.Activity-factor{
+    width:65%;
+    padding: 10px 40px 12px 20px ;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* responsive media quary*/
 @media screen and (max-width:576px) {
     .navbar,
