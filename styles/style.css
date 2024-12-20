@@ -131,11 +131,19 @@ div > img{
     align-items: center;
     text-align: center;
 }
+/* Run related css */
+.run-section{
+    justify-content: center;
+    align-items: center;
+    max-width: 1060px;
+    margin: 0 auto;
+}
 .run-container{
     width: 100%;
     background-color: rgba(34, 34, 34, 1);
     padding: 10px 35px;
     border-radius: 18px;
+    margin: 0 auto;
     margin-top: 130px;
     justify-content: space-between;
 
@@ -154,14 +162,32 @@ div > img{
     font-weight: 900;
     font-size: 3rem;
 }
-
-
+/* Our video related css */
+.Our-video{
+    text-align: center;
+    margin-top: 120px;
+}
+.video-container{
+    width: 100%;
+    border-radius: 10px;
+}
+.video-description{
+    margin-bottom: 30px;
+}
 /* Bmi related css */
+.about-bmi{
+    text-align: center;
+    margin-top: 100px;
+}
+.bmi{
+    max-width: 100%;
+}
 .bmi-container{
     background-color: rgba(34, 34, 34, 1);
-    width: 1440px;
+    width: 100%;
     height: 487px;
     display: flex;
+    margin-bottom: 130px;
     
 }
 table{
@@ -221,24 +247,136 @@ input[type="number"]{
     margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.5);
 }
+/* Meet our team styles */
+.team{
+    max-width: 1060px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 18px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+.team-section {
+    padding: 50px 20px;
+align-items: center;
+text-align: center;
+}
+
+.team-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.team-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #b3b3b3;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+       
+}
+
+.team-member {
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+
+.team-member img {
+    width: 100%;
+    height: 272px;
+    border-radius: 10px;
+
+}
+.team-member{
+    color: white;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #9e9e9e;
+}
+/* footer related styles */
+.footer-links {
+width: 180px;
+}
+.footer-about{
+    width: 443px;
+}
+.footer-links p{
+color:rgba(255, 255, 255, 0.5) ;
+}
+.footer-explore{
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 20px;
+}
+hr{
+    width: 800px;
+}
+
+.footer-sections, .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+}
+.footer-bottom{
+    color: rgba(255, 255, 255, 0.5);
+}
 /* responsive media quary*/
 @media screen and (max-width:576px) {
     .navbar,
      .banner,
-.container
+.container,
+.run-container,
+.Our-video,
+.bmi-container,
+.team-section,
+.footer-sections
      {
         flex-direction: column;
 
     }
-.button{
+.run-image
+    .run-container,
+.button,
+.bmi-container
+{
 display: flex;
 gap: 10px;
-margin: auto; 
+margin: auto;
+margin-bottom: 20px;
+justify-items: center;
+width: 100%; 
 
 }
-.Habit-images{
+
+.Habit-images,
+.team-grid
+{
 grid-template-columns: repeat(1, 1fr);
 }
+
+.bmi-container{
+    padding: 15px;
+}
+.footer-sections{
+    justify-items: center;
+    text-align: center;
+}
+
+
+
 }
 
 
@@ -263,13 +401,3 @@ grid-template-columns: repeat(1, 1fr);
 
 
 
-
-@media screen and (max-width:576px) {
-    
-     .nav-links
-     {
-        flex-direction: column;
-        cursor: pointer;
-    }
-    
-}
